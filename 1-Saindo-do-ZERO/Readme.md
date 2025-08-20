@@ -7,7 +7,7 @@
 2. Criar projeto: `ng new my-first-app`
 3. Criando componete: `ng generate component components/home`
 4. Criando service: `ng generate service services/submitForm`
-
+5. `@input` `@output`
 
 ---
 Ref: [Curso de Angular | Saindo DO ZERO em 1 HORA - Fernanda Kipper](https://youtu.be/VumdXFJ4n7o)
