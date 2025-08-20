@@ -1,1 +1,27 @@
-<p>Hello World</p>
+<h2>Bem vindo {{name}}</h2>
+
+
+<button (click)="onClick($event)">Clique aqui</button>
+
+<!-- new Format -->
+@if (onActive) {
+    <p>Olá Perikan</p>
+    @for (item of listItems; track $index) {
+    <p>{{item}}</p>
+}
+}@else {
+    <p>Olá Henricky</p>
+}
+
+<p>----------------</p>
+
+
+<!-- OldFormat -->
+<p *ngIf="onActive">Habilitado</p>
+<p *ngIf="!onActive">Desabilitado</p>
+
+
+<div *ngIf="onActive">
+    <p *ngFor="let item of listItems"> {{item}}</p>
+</div>
+
