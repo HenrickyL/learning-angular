@@ -4,7 +4,8 @@
 
 1. Instalar CLI: `npm install -g @angular/cli`
     * `ng --version`
-2. Criar projeto: `ng new my-first-app  `
+2. Criar projeto: `ng new my-first-app`
+3. Criando componete: `ng generate component components/home`
 
 
 ---
