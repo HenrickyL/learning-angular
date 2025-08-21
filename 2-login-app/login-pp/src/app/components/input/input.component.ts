@@ -31,11 +31,13 @@ export class InputComponent implements ControlValueAccessor {
   @Input() inputName: string = '';
   // implement ControlValueAccessor
   value: string = '';
-  onChange = () => { };
-  onTouched = () => { };
+  onChange: (value: any) => void = () => {};
+  onTouched: () => void = () => {};
   onInput = (event: Event) => {
     const value = (event.target as HTMLInputElement).value;
     this.value = value;
+    this.onChange(value)
+    this.onTouched();
   }
   writeValue=(value: any)=>{this.value = value;}
   registerOnChange(fn: any): void {this.onChange = fn;}
