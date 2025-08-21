@@ -4,6 +4,7 @@
     secondaryBtText="Signup Now"
     (submit)="submit()"
     (navigate)="navigate()"
+    [disableBtn]="!loginForm.valid"
     
 >
     <form [formGroup]="loginForm">
