@@ -1,0 +1,33 @@
+@import 'ngx-toastr/toastr';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+
+    /* Remove estilos padrão de botões e inputs */
+    button, input, select, textarea {
+        font: inherit;
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+    }
+    /* Remove estilos padrão de links */
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    /* Remove listas padrão */
+    ul, ol {
+        list-style: none;
+    }
+}
